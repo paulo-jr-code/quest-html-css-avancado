@@ -6,11 +6,11 @@ body{
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 3% 5.5%;
+  
+  padding: 2.8% 5.9%;
 }
 
-header{
+header{ 
   margin-bottom: 83px;
 }
 
@@ -18,4 +18,11 @@ header img{
   max-width: 210px;
   height: auto;
   margin-top:15px;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  gap: 50px;  
+
 }
