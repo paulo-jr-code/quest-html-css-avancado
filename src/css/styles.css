@@ -1,4 +1,11 @@
-.poppins-regular {
+body{  
+  min-height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url('../images/bg-desktop.svg') no-repeat  ;
+  background-size: cover;
+  color: #fff;
+}
+/* .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -8,11 +15,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-}
+} */
 
-.logo{
+/* .logo{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-}
+} */
