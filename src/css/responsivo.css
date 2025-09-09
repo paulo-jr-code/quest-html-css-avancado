@@ -1,0 +1,44 @@
+/* 
+  Breakpoint para tablets e celulares (telas de até 768px de largura).
+  Neste ponto, o layout de duas colunas se torna uma coluna única para melhor 
+  visualização em telas menores.
+*/
+@media (max-width: 768px) {
+    body {
+        /* Altera a imagem de fundo para a versão mobile e ajusta o padding */
+        background: var(--violet) url('../images/bg-mobile.svg') no-repeat top / 100% auto;
+        padding: 40px;
+    }
+
+    header {
+        margin-bottom: 60px;
+    }
+
+    header img {
+        max-width: 180px;
+    }
+
+    .hero {
+        /* Altera a direção do flexbox para empilhar os itens verticalmente */
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .hero .hero-conteudo {
+        /* Centraliza o conteúdo de texto e o bloco em si */
+        text-align: center;
+        align-self: center; /* Centraliza o bloco de conteúdo horizontalmente */
+    }
+
+    .hero .hero-conteudo h1 {
+        font-size: 1.7rem;
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+    footer {
+        /* Centraliza os ícones sociais no rodapé */
+        margin-top: 60px;
+        justify-content: center;
+    }
+}

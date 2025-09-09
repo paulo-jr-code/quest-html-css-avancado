@@ -1,28 +1,107 @@
-body{  
-  min-height: 100vh;
-  background-color:var(--violet);
-  background-image: url('../images/bg-desktop.svg') no-repeat ;
-  background-size: cover;
+body{    
+  background: var(--violet) url('../images/bg-desktop.svg') no-repeat left / cover;
   color: #fff;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  
-  padding: 2.8% 5.9%;
+  flex-direction: column;  
+  padding: 2.8% 4.5%;
 }
 
 header{ 
   margin-bottom: 83px;
 }
 
+main{
+  flex-grow: 1;
+}
+
 header img{
-  max-width: 210px;
-  height: auto;
-  margin-top:15px;
+  max-width: 200px; 
+  margin: top 10px;
 }
 
 .hero{
   display: flex;
   align-items: center;
-  gap: 50px;  
+  gap: 50px; /*espaço entre a imagem e o texto*/ 
+}
 
+.hero .hero-ilustracao {
+  flex: 1.6;   /*dá um pouco mais de espaço para a ilustração*/
+}
+
+.hero .hero-ilustracao img {
+  width: 100%;
+}
+
+.hero .hero-conteudo{
+  flex: 1; /*ocupa o espaço restante*/
+  align-self: flex-start;
+}
+
+.hero .hero-conteudo h1{
+  font-family: var(--font-headings);
+  font-size:2.5rem;
+  font-weight: 600;
+  margin-top: 2.9rem;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+}
+
+.hero .hero-conteudo p{
+  font-family: var(--font-body);
+  font-size: 16px;
+   line-height: 1.7;
+}
+
+.btn-registrar{
+  display: inline-block;  /*me permite estilizar botão com propriedades padding, margin etc*/
+  margin-top: 1.4rem;
+  padding: 0.9rem 4rem;
+  background-color: white;
+  color: var(--violet);
+  font-family: var(--font-headings);
+  font-size: 16px;  
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /*all - para que a transição seja aplicada a todas as propriedades que mudarem de estado(background-color, color, transform), o 0.3s define a duração da animação e por fim ease-in-out - para que a animação tenha um efeito de aceleração e desaceleração*/
+  cursor: pointer;
+}
+
+.btn-registrar:hover{
+  background-color: var(--soft-magenta);
+  color: white;
+  transform:scale(1.05)
+  
+}
+
+ footer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  
+} 
+
+.redes-sociais{
+  display:flex;
+  gap: 15px;
+}
+
+.redes-sociais a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration:none;
+  transition: all 0.3s ease-in-out;
+}
+
+.redes-sociais a:hover{
+ color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+  transform: scale(1.1);
 }
